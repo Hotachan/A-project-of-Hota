@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bug Tracker </title>
+</head>
+
+<body>
+    <h1>Bug Tracker</h1>
+    <h2>Report a new bug</h2>
+    <form action="#" method="post">
+        <label for="title">
+            Bug title
+            <br>
+            <input placeholder="Enter your Bug title" style="width: 400px; height: 24px;" id="title" type="text" name="title">
+        </label>
+
+        <br><br>
+
+        <label for="question">
+            Questions/Comments
+            <br>
+            <textarea style="width:400px" rows="5" id="question" type="text" name="question"></textarea>
+        </label>
+
+        <br><br>
+
+        <span>
+            Operating System
+            <br>
+            <select style="width: 200px; height: 30px;" name="operatingSystem">
+                <option selected disabled>-- Choose system --</option>
+                <option>Windows XP</option>
+                <option>Windows 7</option>
+                <option>Windows 8</option>
+                <option>Windows 10</option>
+                <option>Windows 11</option>
+                <option>Linux</option>
+                <option>Mac OS</option>
+            </select>
+        </span>
+
+        <br><br>
+
+        <span>
+            Browser
+            <br>
+            <select style="width: 200px; height: 30px;" name="browser">
+                <option selected disabled>-- Choose browser --</option>
+                <option>Google Chrome</option>
+                <option>Microsoft Edge</option>
+                <option>Coccoc</option>
+                <option>Opera</option>
+                <option>FireFox</option>
+            </select>
+        </span>
+
+        <br><br>
+
+        <span>
+            Assigned To
+            <br>
+            <select style="width: 400px; height: 30px;" name="operatingSystem">
+                <option selected>QA Tester 1</option>
+                <option>Co-Founder</option>
+            </select>
+        </span>
+
+        <br><br>
+
+        <span>
+            Priority
+            <br>
+            <label>
+                <input type="radio" name="priority">
+                Low
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="priority">
+                Medium
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="priority">
+                High
+            </label>
+        </span>
+
+        <br><br>
+
+        <label for="firstScreenshot">
+            Screenshot 1
+            <br>
+            <input style="width: 400px; height: 24px;" id="firstScreenshot" type="file" name="firstScreenshot">
+        </label>
+
+        <br><br>
+
+        <label for="secondScreenshot">
+            Screenshot 2
+            <br>
+            <input style="width: 400px; height: 24px;" id="secondScreenshot" type="file" accept="image/*"
+                name="secondScreenshot">
+        </label>
+        <br><br>
+
+        <span>
+            Status
+            <br>
+            <select style="width: 400px; height: 30px;" name="status">
+                <option selected>In Queue</option>
+                <option>Completed</option>
+            </select>
+        </span>
+
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

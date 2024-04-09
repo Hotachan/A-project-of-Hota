@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Donation</title>
+</head>
+
+<body>
+    <h1>Church Donation</h1>
+    <form action="#" method="post">
+        <label for="fname">
+            First name
+        </label>
+
+        <input style="width: 200px; height: 24px;" id="fname" type="text" name="firstname" required>
+        <label for="lname">
+            Last name
+            <input placeholder="Enter last name" style="width:200px; height: 24px" id="lname" type="text"
+                name="lastname">
+        </label>
+
+        <br><br>
+
+        <label for="email">
+            Email
+            <br>
+            <input style="width: 400px; height: 24px;" id="email" type="email" name="email">
+        </label>
+
+        <br><br>
+
+        <span>
+            Donation Amount
+            <br>
+            <label>
+                <input type="radio" name="donationAmount">
+                $50
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="donationAmount" checked>
+                $100
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="donationAmount">
+                $150
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="donationAmount">
+                $200
+            </label>
+        </span>
+
+        <br><br>
+
+        <label for="address">
+            Full Address
+            <br>
+            <!-- rows: Số hàng nhập văn bản mặc định là 5 -->
+            <textarea rows="5" style="width: 400px;" id="address" type="text" name="address"></textarea>
+        </label>
+        <br>
+        <input type="submit">
+    </form>, initial-scale=1.0">
+    <title>Document</title>
+</body>
+
+</html>
