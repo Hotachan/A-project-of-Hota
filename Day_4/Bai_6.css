@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Montsserat";
+    src: url(../Day_3/fonts/Font_Montsserat/Montserrat-Medium.ttf);
+}
+.narvigation {
+    height: 48px;
+    border-bottom: 1px solid palevioletred;
+}
+
+ul {
+    font-family: "Montsserat";
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    border-bottom: 4px solid palevioletred;
+    color: palevioletred;
+    transition: 200ms;
+    font-weight: bold;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Bài 4</title>
+    <style>
+        @font-face {
+            font-family: "Montsserat";
+            src: url(../Day_3/fonts/Font_Montsserat/Montserrat-Medium.ttf);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .status {
+            width: fit-content;
+            min-width: 100%;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: "Montsserat";
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .status svg {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+
+        .success{
+            background-color: #08cc7155;
+        }
+        .error{
+            background-color:#fd0f235a;
+        }
+        .warning{
+            background-color: #ffc01256;
+        }
+        .information{
+            background-color: #0d98d960;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="status success">
+        <i class="fas fa-check-circle" style="color:#08cc71;"></i>
+        Data upload to the sever. Fire on!
+    </div>
+    <div class="status error">
+        <i class="fas fa-exclamation-circle" style="color:#d11b2a;"></i>
+        There was an error processing your request
+    </div>
+    <div class="status warning">
+        <i class="fas fa-exclamation-circle" style="color:#ffc012;"></i>
+        Seems your account is about expire, upgrade now
+    </div>
+    <div class="status information">
+        <i class="fas fa-info-circle" style="color:#0d98d9;"></i>
+        Chaka is going live on August 30th. Get ready!
+    </div>
+
+</body>
+
+</html>

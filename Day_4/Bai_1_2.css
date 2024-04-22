@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Montsserat";
+    src: url(../Day_3/fonts/Font_Montsserat/Montserrat-Medium.ttf);
+}
+
+.pagination {
+    display: flex;
+}
+
+.item {
+    margin: -2px;
+    padding: 10px 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #dee2e6;
+    font-size: 16px;
+    font-family: "Montsserat";
+}
+
+.active {
+    background-color: rgb(59, 66, 255);
+    color: white;
+    border: hidden ;
+}
+
+.disable {
+    color: rgb(159, 159, 159);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.next {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.list_group {
+    margin: 20px 0px;
+    width: 400px;
+}
+
+.top {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bottom {
+    border-radius: 0px 0px 10px 10px;
+}
