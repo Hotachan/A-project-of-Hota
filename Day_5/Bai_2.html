@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai_1</title>
+    <style>
+ *{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+ }
+ .container{
+    display: flex;
+    font-size: 16px;
+    height: 400px;
+    width: fit-content;
+    background-color: rgb(173, 239, 251);
+    padding: 20px;
+    margin: 20px;
+    border: 2px;
+    border-color: black;
+ }
+        .nav-link{
+            text-align: center;
+            list-style: none;
+            padding: 10px 20px;
+            margin: 10px 0px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #fff2b2;
+            border: solid 1px;
+        }
+
+        a {
+            text-decoration: none;
+            color: currentColor;
+        }
+
+        .drop-down {
+            position: absolute;
+            margin: -30px 180px;
+            color: black;
+            display: none;
+            list-style: none;
+        }
+        .sub_drop{
+            border: solid 1px;
+            margin: -1.1px 0px;
+            padding: 10px 40px;
+            font-size: 14px;
+            
+        }
+        .nav-link:hover {
+            background-color: black;
+            color: #fff;
+        }
+
+        .users:hover .drop-down {
+            display: block;
+        }
+
+        .drop-down li:hover {
+            background: black;
+            color: #fff;
+        }
+        p {
+            position: relative;
+            bottom: -165px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link users">
+                        <a href="#">Users </a>
+                        <ul class="drop-down">
+                            <li class="sub_drop"> Customers </li>
+                            <li class="sub_drop">Admins</li>
+                            <li class="sub_drop"> Vip</li>
+                            <li class="sub_drop">My staffs</li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Oders</a>
+                    </li>
+                </ul>
+                <p style="font-size: 14px;"> Copyright 2024 by Hotachan</p>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

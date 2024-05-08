@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 1</title>
+        <style>
+            .container{
+                margin: auto;
+                margin-top: 50px;
+                width: fit-content;
+            }
+            .pagination{
+                padding: 16px;
+                color: blue;
+                border: 1px solid gray;
+                cursor: pointer;
+            }
+            .border-left-none{
+                border-left: none;
+            }
+            .pagination:first-child{
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+            .pagination:last-child{
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+            .disabled{
+                background: rgb(214, 214, 214);
+                color: black;
+            }
+            .active{
+                background: rgb(83, 125, 204);
+                color: white;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="container">
+			<span class="pagination disabled"> Previous </span>
+			<span class="pagination border-left-none"> 1 </span>
+			<span class="pagination border-left-none active"> 2 </span>
+			<span class="pagination border-left-none"> 3 </span>
+			<span class="pagination border-left-none"> Next </span>
+		</div>
+	</body>
+</html> -->
+<!-- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.list-item {
+				border: 1px solid black;
+				border-radius: 8px;
+				width: 300px;
+				margin: auto;
+			}
+
+			.item {
+				padding: 8px 16px;
+				border-bottom: 1px solid black;
+			}
+
+			.item:last-child {
+				border-bottom: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="list-item">
+			<div class="item">An item</div>
+			<div class="item">A second item</div>
+			<div class="item">A third item</div>
+			<div class="item">An fourth item</div>
+			<div class="item">And a fifth one</div>
+		</div>
+	</body>
+</html>

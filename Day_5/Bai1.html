@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .container {
+            width: fit-content;
+            margin: auto;
+            padding: 2px;
+            font-size: 14px;
+            background: #99e7ff;
+            border: solid 2px;
+        }
+
+        .navbar {
+            margin: auto;
+            padding: 10px 20px;
+            background: #fff2b2;
+            border: solid 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link,
+        .drop-down li {
+            list-style: none;
+            padding: 10px 10px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: currentColor;
+        }
+
+        .drop-down {
+            position: absolute;
+            margin: 12px -10px;
+            background: #fff2b2;;
+            color: black;
+            font-size: 12px;
+            display: none;
+        }
+        .sub_drop{
+            border: solid 1px;
+            margin: -1.2px 0px;
+        }
+        .nav-link:hover {
+            background-color: black;
+            color: #fff;
+        }
+
+        .users:hover .drop-down {
+            display: block;
+        }
+        .drop-down li:hover {
+            background: black;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-link users">
+                    <a href="#">Users </a>
+                    <ul class="drop-down">
+                        <li class="sub_drop"> Customers </li>
+                        <li class="sub_drop">Admins</li>
+                        <li class="sub_drop"> Vip</li>
+                        <li class="sub_drop">My staffs</li>
+                    </ul>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Products</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
