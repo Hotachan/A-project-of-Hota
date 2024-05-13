@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <style>
         .container {
             min-width: 40%;
@@ -19,7 +17,7 @@
 
         .btn {
             width: fit-content;
-            display: flex;
+            display: inline-block;
             background-color: aliceblue;
             box-shadow: none !important;
             padding: 8px 20px;
@@ -36,7 +34,7 @@
             font-size: 14px;
             background-color: palevioletred;
             padding: 8px;
-            left: 120%;
+            left: 110%;
             top: 0%;
             white-space: nowrap;
             transform: translateX(-50%);
@@ -48,7 +46,7 @@
         .tooltip_text::before {
             content: "";
             position: absolute;
-            left: 50%;
+            left: 0%;
             top: 100%;
             transform: translateX(-50%);
 
@@ -76,4 +74,86 @@
     </div>
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+        <style>
+            .container {
+	width: 50%;
+	padding: 20px;
+	background: skyblue;
+	border: 1px solid #4a8a93;
+	margin: auto;
+}
+
+p.text {
+	border: 1px solid #b2677a;
+	background: antiquewhite;
+	padding: 16px 12px;
+}
+
+.btn {
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: none;
+	color: white;
+}
+
+.btn-delete {
+	background: deeppink;
+	border: 1px solid #c1056a;
+}
+
+.btn-keep {
+	background: aqua;
+	border: 1px solid #258ed4;
+}
+
+span {
+	position: relative;
+}
+
+p.dialog {
+	position: absolute;
+	width: 150px;
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+	top: -90px;
+	left: -50px;
+	background: cadetblue;
+	display: none;
+}
+
+.btn-delete:hover ~ .dialog {
+	display: block;
+}
+
+        </style>
+	</head>
+	<body>
+		<div class="container">
+			<!-- alt + shift + p -->
+			<p class="text">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+				iste molestias error ab magni fugit voluptas velit doloremque laborum
+				aspernatur asperiores eius libero similique, excepturi dolor quidem,
+				dolorem repellendus cumque?
+			</p>
+			<div class="button-group">
+				<span>
+					<button class="btn btn-delete">Delete</button>
+					<p class="dialog">Có không giữ, xóa đừng tiếc</p>
+				</span>
+
+				<button class="btn btn-keep">Keep</button>
+			</div>
+		</div>
+	</body>
 </html>
