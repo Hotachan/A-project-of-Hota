@@ -1,0 +1,17 @@
+body{
+    margin: 10px;
+}
+.container-fluid{
+    background: linear-gradient( to right, #ffb7ce,#9aeefd );
+}
+.navbar-brand {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+.collapse, .navbar-collapse {
+    justify-content: flex-end;
+}
+.nav-link {
+    color: black;
+}

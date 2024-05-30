@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        @media (max-width:768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .pink {
+            order: 1;
+        }
+            
+        }
+        .bg {
+            width: 30%;
+            height: 200px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+            .pink {
+                background-color: palevioletred;
+                border: solid 2px purple;
+            }
+
+        .green {
+            background-color: rgba(4, 142, 4, 0.64);
+            border: solid 2px green;
+        }
+
+        .yellow {
+            background-color: rgb(255, 245, 99);
+            border: solid 2px orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg pink"></div>
+        <div class="bg green"></div>
+        <div class="bg yellow"></div>
+    </div>
+</body>
+
+</html>
